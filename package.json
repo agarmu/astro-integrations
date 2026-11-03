@@ -1,5 +1,6 @@
 {
   "name": "astro-integrations",
+  "license": "BSD-2-Clause-Patent",
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
