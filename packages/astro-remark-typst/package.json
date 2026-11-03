@@ -1,0 +1,23 @@
+{
+  "name": "@agarmu/astro-remark-typst",
+  "version": "0.1.0",
+  "description": "Remark plugin to rewrite local Typst links for Astro",
+  "license": "BSD-2-Clause-Patent",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@agarmu/astro-typst": "workspace:*",
+    "@types/mdast": "^4.0.4",
+    "mdast-util-mdx-jsx": "^3.2.0",
+    "unist-util-visit": "^5.2.0",
+    "vfile": "^6.0.0"
+  },
+  "peerDependencies": {
+    "@astrojs/markdown-remark": "^7.3.5"
+  }
+}
