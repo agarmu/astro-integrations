@@ -1,15 +1,7 @@
 # astro-integrations
 
-To install dependencies:
+Some Astro integrations for my personal use.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run src/index.ts
-```
-
-This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+- Compile Typst Files into PDFs
+- Fetch remote files
+- Generate Images using Satori/Sharp
