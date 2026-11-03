@@ -1,4 +1,3 @@
-import { mkdir, writeFile } from "node:fs/promises";
 import type { IncomingMessage, ServerResponse } from "node:http";
 import type { AstroIntegration } from "astro";
 import sharp from "sharp";
@@ -32,8 +31,7 @@ async function serveRemoteFile(
   response: ServerResponse,
   userAgent: string,
 ): Promise<boolean> {
-  const pathname = new URL(request.url ?? "/", "http://localhost").pathname;
-  const file = remoteFiles.get(pathname);
+  const file = remoteFiles.getRequest(request.url);
   if (!file) return false;
 
   const { response: remote, body } = await load(file, userAgent);
@@ -61,9 +59,7 @@ async function downloadRemoteFile(
     );
   }
 
-  const target = new URL(`.${pathname}`, dir);
-  await mkdir(new URL("./", target), { recursive: true });
-  await writeFile(target, body);
+  await remoteFiles.write(pathname, dir, body);
 }
 
 export default function downloadRemoteFiles({
