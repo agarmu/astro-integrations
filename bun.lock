@@ -4,6 +4,9 @@
   "workspaces": {
     "": {
       "name": "astro-integrations",
+      "dependencies": {
+        "sharp": "^0.35.5",
+      },
       "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@typescript/native": "npm:typescript@^7.0.2",
