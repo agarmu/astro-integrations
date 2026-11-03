@@ -1,0 +1,47 @@
+# Astro build output
+dist/
+.astro/
+.vercel/
+
+# Dependencies
+node_modules/
+test-results/
+
+# macOS files
+.DS_Store
+
+
+# Temporary files
+*.bak
+*.swp
+*.tmp
+
+# System files
+Thumbs.db
+Desktop.ini
+
+# Git files
+*.orig
+*.rej
+
+# Logs
+*.log
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Other
+*.env
+*.local
+*build.lock
+*.pid
+*.seed
+*.pid.lock
+*.seed.lock
+
+# direnv
+/.direnv/
+src/**/*.pdf
