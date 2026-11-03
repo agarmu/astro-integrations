@@ -2,9 +2,18 @@
   "name": "astro-integrations",
   "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier . --write"
+  },
   "devDependencies": {
-    "@types/bun": "latest",
-    "astro": "^7.4.5"
+    "@eslint/js": "^10.0.1",
+    "astro": "^7.4.5",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.10",
+    "typescript-eslint": "^8.72.1"
   },
   "peerDependencies": {
     "typescript": "^7.0.2"
