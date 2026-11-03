@@ -1,0 +1,21 @@
+{
+  "name": "@agarmu/astro-images",
+  "version": "0.1.0",
+  "description": "Astro integration to generate images with Satori and Sharp",
+  "license": "BSD-2-Clause-Patent",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@agarmu/astro-core": "workspace:*",
+    "satori": "^0.63.2",
+    "sharp": "^0.35.5"
+  },
+  "peerDependencies": {
+    "astro": "^7.4.5"
+  }
+}

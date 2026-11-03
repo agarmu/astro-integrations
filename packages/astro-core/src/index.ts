@@ -1,0 +1,1 @@
+export { PathRegistry } from "./registry";

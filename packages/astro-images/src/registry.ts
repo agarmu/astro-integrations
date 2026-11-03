@@ -1,4 +1,4 @@
-import { PathRegistry } from "../lib/registry";
+import { PathRegistry } from "@agarmu/astro-core";
 import type { SatoriOptions } from "satori";
 
 type RenderOptions = Omit<SatoriOptions, "width" | "height">;

@@ -1,4 +1,4 @@
-import { PathRegistry } from "../lib/registry";
+import { PathRegistry } from "@agarmu/astro-core";
 
 export interface RemoteFile {
   url: string;

@@ -1,0 +1,13 @@
+{
+  "name": "@agarmu/astro-core",
+  "version": "0.1.0",
+  "description": "Shared utilities for astro",
+  "license": "BSD-2-Clause-Patent",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ]
+}

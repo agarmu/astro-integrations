@@ -1,0 +1,20 @@
+{
+  "name": "@agarmu/astro-typst",
+  "version": "0.1.0",
+  "description": "Astro integration to compile typst files",
+  "license": "BSD-2-Clause-Patent",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@agarmu/astro-core": "workspace:*",
+    "@myriaddreamin/typst-ts-node-compiler": "^0.7.0"
+  },
+  "peerDependencies": {
+    "astro": "^7.4.5"
+  }
+}
