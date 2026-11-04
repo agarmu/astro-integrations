@@ -1,0 +1,19 @@
+{
+  "name": "@agarmu/astro-external-links",
+  "version": "0.1.0",
+  "description": "Astro middleware for external links",
+  "license": "BSD-2-Clause-Patent",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "parse5": "^8.1.0"
+  },
+  "peerDependencies": {
+    "astro": "^7.4.5"
+  }
+}
